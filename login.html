@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <label for="Email">Email:</label><br>
+    <input type="text" id="Email"name="Email"><br>
+    <label for="password">password:</label><br>
+    <input type="text" id="password"name="password"><br>
+    <button onclick="Login()">submit</button>
+    <div id = "messagecontainer"></div>
+    <script>
+        function Login(){
+      let Email = document.querySelector("#Email").value
+        // console.log(Email)
+        let messagecontainer = document.querySelector("#messagecontainer")
+        
+        let password = document.querySelector("#password").value
+        // console.log(password)
+        
+        if(Email==="ALIEN@gmail.com"){
+            messagecontainer.textContent="Login successful."
+        }
+        // let messagecontainer = document.querySelector("#messagecontainer")
+        
+        }
+    </script>
+</body>
+</html>
